@@ -1,4 +1,4 @@
-package com.app.ecom;
+package com.app.ecom.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,13 +9,14 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-//@AllArgsConstructor
-//@Entity(name = "user_table")
-@Entity
-public class User {
+@Entity (name = "addresses")
+public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private String firstName;
-    private String lastName;
+    private Long id;
+    private String street;
+    private String city;
+    private String state;
+    private String country;
+    private String zipcode;
 }

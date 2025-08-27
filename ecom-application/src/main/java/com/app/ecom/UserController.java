@@ -1,10 +1,9 @@
 package com.app.ecom;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -12,7 +11,7 @@ import java.util.List;
 @RequestMapping("/api/users")
 public class UserController {
 
-    private List<User> userList = new ArrayList<>();
+//    private List<User> userList = new ArrayList<>();
 
     public final UserService userService = new UserService();
 

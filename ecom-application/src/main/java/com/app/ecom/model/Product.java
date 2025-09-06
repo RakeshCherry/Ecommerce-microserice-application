@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
-@Entity(name = "Product")
+@Entity(name = "products")
 @NoArgsConstructor
 public class Product {
 
